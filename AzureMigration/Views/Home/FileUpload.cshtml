@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "FileUpload";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="text-center">
+    @{ if (ViewBag.count != 0 && ViewBag.size > 0)
+        {
+        <p>Files uploaded to Blob Container. Files Count: @ViewBag.count </p><span> Files Size: @ViewBag.size kb</span>
+            }
+    }
+
+</div>
